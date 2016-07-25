@@ -46,7 +46,7 @@ var notifiedPokemon = [];
 
 $selectExclude.on("change", function (e) {
     excludedPokemon = $selectExclude.val().map(Number);
-    clearStaleMarkers();
+    //clearStaleMarkers();
     localStorage.remember_select_exclude = JSON.stringify(excludedPokemon);
 });
 
@@ -478,7 +478,7 @@ function updateMap() {
 
         });
 
-        clearStaleMarkers();
+        //clearStaleMarkers();
     });
 };
 
