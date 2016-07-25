@@ -726,7 +726,7 @@ function updateMap() {
         clearOutOfBoundsMarkers(map_data.gyms);
         clearOutOfBoundsMarkers(map_data.pokestops);
         clearOutOfBoundsMarkers(map_data.scanned);
-        clearStaleMarkers();
+        //clearStaleMarkers();
     });
 };
 
@@ -938,7 +938,7 @@ $(function () {
         // setup list change behavior now that we have the list to work from
         $selectExclude.on("change", function (e) {
             excludedPokemon = $selectExclude.val().map(Number);
-            clearStaleMarkers();
+            //clearStaleMarkers();
             localStorage.remember_select_exclude = JSON.stringify(excludedPokemon);
         });
         $selectNotify.on("change", function (e) {
